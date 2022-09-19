@@ -1,0 +1,32 @@
+/*tooltip on the top*/
+.tooltip-t .tooltiptext-t {
+	visibility: hidden;
+	opacity: 0;
+	width: max-content;
+	background-color: var(--pricolor);
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding-left: 4px;
+	padding-right: 4px;
+	bottom: 160%;
+	left: 60%;
+	transform: translateX(-50%);
+	position: absolute;
+	transition: opacity 1s;
+}
+.tooltip-t .tooltiptext-t::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--pricolor) transparent transparent transparent;
+}
+
+.tooltip-t:hover .tooltiptext-t {
+	visibility: visible;
+	opacity: 1;
+}

@@ -1,0 +1,65 @@
+.shadenav{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	visibility: hidden;
+	background-color: #da8a67c0;
+	/*background-color: red;*/
+	z-index: 4;
+	transition: 0.3s all;
+	
+}
+
+.sidenav {
+	height: 100%;
+	width: 300px;
+	transform: translateX(100%);
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s all;
+	padding-top: 60px;
+}
+.sidenav a {
+	position: relative;
+	left: 15px;
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: inline-block;
+	transition: 0.3s;
+	
+}
+.sidenavbar{
+	position: relative;
+	margin-left: 16px;
+	bottom: 6px;
+	text-decoration: none;
+	font-size: 18px;
+	color: var(--pricolor);
+	display: inline-block;
+	transition: 0.3s;
+	
+	
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 48px;
+  margin-right: 50px;
+}
+.fadeout {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear .3s, opacity .3s;
+}
+.fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity .3s;
+}
