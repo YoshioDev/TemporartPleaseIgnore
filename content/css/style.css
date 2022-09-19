@@ -20,7 +20,7 @@ body{
 }
 
 /*header stuff I couldn't move to header*/
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 850px) and (orientation : landscape) {
 	.medium-show {
 		display: none;
 	}
