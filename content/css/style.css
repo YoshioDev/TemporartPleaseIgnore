@@ -20,7 +20,7 @@ body{
 }
 
 /*header stuff I couldn't move to header*/
-@media only screen and (min-width: 850px) and (orientation : landscape) {
+@media min-width: 850px) and (orientation : landscape) {
 	.medium-show {
 		display: none;
 	}
@@ -29,7 +29,7 @@ body{
 	}
 
 }
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) or (orientation : portrait) {
     .medium-hide {
         display: none;
     }
