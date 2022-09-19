@@ -20,16 +20,32 @@ body{
 }
 
 /*header stuff I couldn't move to header*/
-@media (min-width: 850px) and (orientation : landscape) {
-	.medium-show {
-		display: none;
+@media only screen and (orientation : landscape){
+	@media (min-width: 850px){
+		.medium-show {
+			display: none;
+		}
+		img.banner, .bothead{
+			height: 90px;
+		}
 	}
-	img.banner, .bothead{
-		height: 90px;
+	@media (max-width: 850px) {
+		.medium-hide {
+			display: none;
+		}
+		.bothead{
+			text-align: center;
+			height: 120px;
+		}
+		img.banner{
+			max-height: 70px;
+			max-width: 100%;
+			margin: 0;
+			vertical-align: middle;
+		}
 	}
-
 }
-@media (max-width: 850px) or (orientation : portrait) {
+@media only screen and (orientation : portrait){
     .medium-hide {
         display: none;
     }
