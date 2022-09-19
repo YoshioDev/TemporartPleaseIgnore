@@ -20,7 +20,7 @@ body{
 }
 
 /*header stuff I couldn't move to header*/
-@media min-width: 850px) and (orientation : landscape) {
+@media (min-width: 850px) and (orientation : landscape) {
 	.medium-show {
 		display: none;
 	}
