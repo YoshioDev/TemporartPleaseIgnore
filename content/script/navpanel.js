@@ -1,3 +1,5 @@
+	document.getElementById("shadenav").classList.toggle("fadeout");
+	document.getElementById("sidenavbutton").classList.toggle("fadein");
 
 function openNav() {
 	document.getElementById("sidenav").style.transform = "translateX(0%)";
